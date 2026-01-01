@@ -52,6 +52,8 @@ export default function ContactPage() {
     setFormData((prev) => ({ ...prev, [field]: value }));
   };
 
+  const [mapLoaded, setMapLoaded] = useState(false);
+
   return (
     <div className="min-h-screen pt-20 lg:pt-32">
       {/* Hero Section */}
@@ -254,18 +256,31 @@ export default function ContactPage() {
             {/* Map */}
             <div className="bg-black rounded-2xl border border-gray-800 overflow-hidden">
               <div className="h-96 bg-gray-800 relative">
-                {/* Replace with actual Google Maps embed */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-5xl mb-4">🗺️</div>
-                    <div className="text-white font-medium mb-2">
-                      Google Maps Integration
-                    </div>
-                    <div className="text-gray-400">
-                      Interactive map will be embedded here
+                {/* Google Maps Embed */}
+                <iframe
+                  className="absolute inset-0 w-full h-full"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31688.00521060341!2d79.82574927431641!3d6.890523900000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bd07d6d38e9%3A0x70c0fa51dfabbd8e!2sSalt%20%26%20Pepper!5e0!3m2!1sen!2slk!4v1767264735398!5m2!1sen!2slk"
+                  allowFullScreen={true}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  onLoad={() => setMapLoaded(true)}
+                  onError={() => setMapLoaded(false)}
+                ></iframe>
+
+                {/* Fallback when map fails or is loading */}
+                {!mapLoaded && (
+                  <div className="absolute inset-0 flex items-center justify-center bg-gray-800/80 backdrop-blur-sm">
+                    <div className="text-center">
+                      <div className="text-5xl mb-4">🗺️</div>
+                      <div className="text-white font-medium mb-2">
+                        Google Maps Integration
+                      </div>
+                      <div className="text-gray-400">
+                        Interactive map will be embedded here
+                      </div>
                     </div>
                   </div>
-                </div>
+                )}
               </div>
 
               <div className="p-8">

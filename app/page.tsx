@@ -66,7 +66,7 @@ const testimonials = [
     comment:
       "An unforgettable dining experience. The attention to detail in every dish is remarkable.",
     image:
-      "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=200&h=200&fit=crop",
+      "https://tse4.mm.bing.net/th/id/OIP.OAlcb7uwPa9yadcfXEKqPgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
   },
   {
     id: 2,

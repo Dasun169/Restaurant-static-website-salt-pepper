@@ -106,7 +106,7 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-            <div className="mt-6 p-4 bg-black rounded-lg border border-gray-800">
+            {/* <div className="mt-6 p-4 bg-black rounded-lg border border-gray-800">
               <div className="flex items-center space-x-3">
                 <Clock className="text-[#D4AF37]" size={16} />
                 <div>
@@ -114,7 +114,7 @@ export default function Footer() {
                   <div className="text-sm text-white">9:30 PM</div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Contact Info */}
@@ -164,7 +164,7 @@ export default function Footer() {
             </div>
 
             {/* Social Media */}
-            <div className="mt-8">
+            {/* <div className="mt-8">
               <h4 className="text-sm font-medium text-white mb-4 uppercase tracking-wider">
                 Follow Our Journey
               </h4>
@@ -197,10 +197,10 @@ export default function Footer() {
                   <span className="text-xs font-bold">TA</span>
                 </a>
               </div>
-            </div>
+            </div> */}
 
             {/* Newsletter */}
-            <div className="mt-8">
+            {/* <div className="mt-8">
               <h4 className="text-sm font-medium text-white mb-3">
                 Stay Updated
               </h4>
@@ -217,7 +217,7 @@ export default function Footer() {
                   Join
                 </button>
               </form>
-            </div>
+            </div> */}
           </div>
         </div>
 
