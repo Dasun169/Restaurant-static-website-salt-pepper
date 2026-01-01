@@ -144,13 +144,13 @@ export default function Home() {
 
         {/* Hero Content */}
         <div className="relative z-20 text-center px-4 lg:px-8 max-w-7xl mx-auto">
-          <div className="inline-flex items-center space-x-6 mb-6 pt-6 animate-fadeIn">
+          {/* <div className="inline-flex items-center space-x-6 mb-6 pt-6 animate-fadeIn">
             <div className="w-16 h-px bg-[#D4AF37]"></div>
             <span className="text-[#D4AF37] text-sm uppercase tracking-[0.3em]">
               Exquisite Dining
             </span>
             <div className="w-16 h-px bg-[#D4AF37]"></div>
-          </div>
+          </div> */}
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif mb-8 animate-slideUp">
             <span className="block text-white leading-tight">
